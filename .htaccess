@@ -1,0 +1,21 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /forum/
+RewriteRule ^register register.html
+RewriteRule ^login-fail index.php?status=login-fail
+RewriteRule ^reg-success index.php?status=reg-success
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^topics/(.+)/(.+)/(.+)$ topics.php?cid=$1&scid=$2&status=login-fail [L]
+RewriteRule ^topics/(.+)/(.+)$ topics.php?cid=$1&scid=$2 [L]
+
+RewriteRule ^newtopic/(.+)/(.+)/(.+)$ newtopic.php?cid=$1&scid=$2&status=login-fail [L]
+RewriteRule ^newtopic/(.+)/(.+)$ newtopic.php?cid=$1&scid=$2 [L]
+
+RewriteRule ^readtopic/(.+)/(.+)/(.+)/(.+)$ readtopic.php?cid=$1&scid=$2&tid=$3&status=login-fail [L]
+RewriteRule ^readtopic/(.+)/(.+)/(.+)$ readtopic.php?cid=$1&scid=$2&tid=$3 [L]
+
+RewriteRule ^replyto/(.+)/(.+)/(.+)/(.+)$ replyto.php?cid=$1&scid=$2&tid=$3&status=login-fail [L]
+RewriteRule ^replyto/(.+)/(.+)/(.+)$ replyto.php?cid=$1&scid=$2&tid=$3 [L]
