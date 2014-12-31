@@ -13,19 +13,6 @@ h1, h2, h3 {
 	margin-bottom: 15px;
 }
 
-a {
-	text-decoration: none;
-	color: #0066FF;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-p {
-	font-family: Calibri;
-}
-
 div.pane {
 	width: 1000px;
 	margin: 0px auto;
@@ -34,12 +21,6 @@ div.pane {
 div.header {
 	padding-top: 15px;
 	padding-bottom: 15px;
-}
-
-div.header h1 {
-	margin-left: 15px;
-	font-family: Century Gothic;
-	font-weight: normal;
 }
 
 div.loginpane {
@@ -68,36 +49,64 @@ div.content {
 	padding: 15px;
 }
 
-table.reply-table, table.topic-table {
+div.header h1 {
+	margin-left: 15px;
+	font-family: Century Gothic;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	color: #0066FF;
+}
+
+p{
 	font-family: Calibri;
-	border-collapse: collapse;
 }
 
-table.reply-table th {
-	vertical-align: top;
-	text-align: left;
-	font-size: 12pt;
+input[type="submit"], button {
+	border-radius: 4px;
+	color: #EFEFEF;
+	width: 200px;
+	padding: 7px;
+	font-family: Calibri;
+	background-image: linear-gradient(to bottom, #0066FF, #0099FF);
+	margin-top: 15px;
+	border: none;
 }
 
-table.reply-table td {
-	padding-left: 15px;
-	vertical-align: top;
-	margin-bottom: 5px;
+input[type="text"],[type="password"] {
+	border-radius: 15px;
+	width: 200px;
+	padding: 7px;
+	font-family: Arial;
+	margin-top: 15px;
+	border: none;
+	background-color: #DFDFDF;
 }
 
-table.topic-table th {
-	text-align: left;
-	font-size: 12pt;
-	padding: 4px;
-	background-color: #8E8E8E;
+input[type="text"]:focus {
+	outline-width: 0;
+	outline-style: none;
 }
 
-table.topic-table td {
-	font-size: 12pt;
-	padding: 4px;
+input[type="password"]:focus {
+	outline-width: 0;
+	outline-style: none;
 }
+	
+input[type="submit"]:focus {
+	outline-width: 0;
+	outline-style: none;
+}	
+
+button:focus {
+	outline-width: 0;
+	outline-style: none;
+}	
 
 table.category-table {
+	width: 100%;
 	margin-bottom: 35px;
 	font-family: Calibri;
 }
@@ -113,6 +122,34 @@ table.category-table th {
 	text-align: left;
 }
 
+table.topic-table {
+	width: 100%;
+	font-family: Calibri;
+}
+
+table.topic-table th {
+	vertical-align: top;
+	text-align: left;
+	font-size: 12pt;
+	background-color: #8E8E8E;
+	padding: 4px;
+}
+
+table.topic-table td {
+	font-size: 12pt;
+	padding: 4px;
+}
+
+input#topic {
+	border-radius: 15px;
+	width: 350px;
+	padding: 7px;
+	font-family: Arial;
+	margin-top: 15px;
+	border: none;
+	background-color: #DFDFDF;
+}
+
 textarea {
 	width: 350px;
 	height: 100px;
@@ -120,54 +157,33 @@ textarea {
 	margin-bottom: 15px;
 }
 
-input[type="submit"], button {
-	border-radius: 4px;
-	color: #EFEFEF;
-	width: 200px;
-	padding: 7px;
+a:hover {
+	text-decoration: underline;
+}
+
+table.reply-table {
 	font-family: Calibri;
-	background-image: linear-gradient(to bottom, #0066FF, #0099FF);
-	border: 0px;
-	margin-top: 15px;
-	border: none;
+	width: 100%;
 }
 
-input[type="text"],[type="password"] {
-	border-radius: 15px;
-	width: 200px;
-	padding: 7px;
-	font-family: Arial, Verdana;
-	margin-top: 15px;
-	border: none;
-	background-color: #DFDFDF;
+table.reply-table th {
+	vertical-align: top;
+	text-align: left;
+	font-size: 12pt;
 }
 
-input#topic {
-	border-radius: 15px;
-	width: 350px;
-	padding: 7px;
-	font-family: Arial, Verdana;
-	margin-top: 15px;
-	border: none;
-	background-color: #DFDFDF;
+table.reply-table td {
+	padding-left: 15px;
+	vertical-align: top;
+	margin-bottom: 5px;
 }
 
-input[type="text"]:focus {
-	outline-width: 0;
-	outline-style: none;
-}
 
-input[type="password"]:focus {
-	outline-width: 0;
-	outline-style: none;
-}
-
-input[type="submit"]:focus {
-	outline-width: 0;
-	outline-style: none;
-}
-
-button:focus {
-	outline-width: 0;
-	outline-style: none;
-}
+	
+	
+	
+	
+	
+	
+	
+	

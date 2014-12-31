@@ -2,6 +2,6 @@
 	$host = 'localhost';
 	$username = 'root';
 	$password = '';
-	$dbname = 'forum';
+	$dbname = 'forum-tutorial';
 	$con = mysqli_connect($host, $username, $password, $dbname);
 ?>

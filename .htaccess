@@ -1,6 +1,6 @@
 Options +FollowSymLinks
 RewriteEngine On
-RewriteBase /forum/
+RewriteBase /forum-tutorial/
 RewriteRule ^register register.html
 RewriteRule ^login-fail index.php?status=login-fail
 RewriteRule ^reg-success index.php?status=reg-success
